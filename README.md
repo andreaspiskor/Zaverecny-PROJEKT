@@ -9,10 +9,10 @@
 * Součástí prezentace bude ukázka.
 -----------------------------------------------------------
 ## Odkazy
-* https://www.youtube.com/user/Unity3D
-* https://www.youtube.com/watch?v=zsL6LYVYU5c
-* https://www.youtube.com/watch?v=li5AETcKOO0
-* https://www.youtube.com/watch?v=RFVhesT0VvQ
-* https://www.youtube.com/watch?v=oh6ietUfo_I
+* Budou nové, ale až budu doma ;)
+
+-----------------------------------------------------------
+## Modely a textury
+* Modely budou ve formátu FBX, OBJ a MASH.
 
 ##### Závěrečný projekt
