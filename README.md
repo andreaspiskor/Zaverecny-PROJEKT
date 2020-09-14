@@ -8,11 +8,17 @@
 * Postavy budou nadabované.
 * Součástí prezentace bude ukázka.
 -----------------------------------------------------------
+### GUI
+* Budu se snažit, aby nebylo přeplněné zbytečnými věcmi.
+* Bude osbashovat jen důležité informace o hráči a jeho úkolech.
+-----------------------------------------------------------
+### Modely a textury
+* Modely budou ve formátu FBX, OBJ a MASH.
+-----------------------------------------------------------
+### Dabing
+* Dabing bude součástí z Audacity. 
+-----------------------------------------------------------
 ## Odkazy
 * Budou nové, ale až budu doma ;)
-
------------------------------------------------------------
-## Modely a textury
-* Modely budou ve formátu FBX, OBJ a MASH.
 
 ##### Závěrečný projekt
