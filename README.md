@@ -1,11 +1,12 @@
 # Projekt
 
 ## Cíle Projektu 
-* Chci udělat funkční 3D FPS hru v Unity Enginu.
-* Hra bude obsahovat modely, které si sám vytvořím.
+* Chci udělat funkční 3D hru v Unreal Enginu.
 * Hráčovo GUI bude taky součástí.
-* Budu se inspirovat hrami jako je DOOM, Medal of Honor atd.
-* Taky se pokusím o vytvoření MENU a vytvoření levelů.
+* Budu se inspirovat hrami jako je Shadow of Mordor, Dark Souls atd.
+* Taky se pokusím o vytvoření MENU a vytvoření levelů a různých map.
+* Postavy budou nadabované.
+* Součástí prezentace bude ukázka.
 -----------------------------------------------------------
 ## Odkazy
 * https://www.youtube.com/user/Unity3D
