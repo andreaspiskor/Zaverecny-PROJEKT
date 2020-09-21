@@ -10,10 +10,10 @@
 -----------------------------------------------------------
 ### Jak to funguje?
 * Pokud je osoba (nebo předmět) kratší než 1,5 metru od vás, rozsvítí se červená LED dioda, 
-* z reproduktoru zazní výstražný signál. Chcete-li ji použít, stiskněte tlačítko,
+* z reproduktoru zazní výstražný signál. 
 -----------------------------------------------------------
 ### Jak se spouští?
-* Počkejte 1 až 2 sekundy na spuštění a pokud držíte stisknuté tlačítko, zařízení je aktivován. 
+* Chcete-li ji použít, stiskněte tlačítko, počkejte 1 až 2 sekundy na spuštění a pokud držíte stisknuté tlačítko, zařízení je aktivován. 
 * Zaměřte obě „oči“ na osobu (nebo předmět) a zkontrolujte, zda je vzdálenost menší než 1,5 metru.
 -----------------------------------------------------------
 ## Odkazy
