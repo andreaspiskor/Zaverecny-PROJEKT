@@ -1,22 +1,20 @@
-# Projekt
+# Zařízení, které bude varovat o odstupech v této špatné době. :)
 
 ## Cíle Projektu 
-* Chci udělat funkční 3D hru v Unreal Enginu.
-* Hráčovo GUI bude taky součástí.
-* Budu se inspirovat hrami jako je Shadow of Mordor, Dark Souls atd.
-* Taky se pokusím o vytvoření MENU a vytvoření levelů a různých map.
-* Postavy budou nadabované.
-* Součástí prezentace bude ukázka.
+* Hlavním účelem tohoto zařízení je informovat lidi o vzdálenosti, kterou od sebe kvůli pandemii Corona potřebují držet dál. 
+* Zařízení měří vzdálenost mezi vámi a jinou osobou (nebo obecně předměty). 
 -----------------------------------------------------------
-### GUI
-* Budu se snažit, aby nebylo přeplněné zbytečnými věcmi.
-* Bude osbashovat jen důležité informace o hráči a jeho úkolech.
+### Vdálenost
+* Ne každý přesně ví, co je 1,5 metru. S tímto jednoduchým zařízením je můžete ukázat.  
+* Můžete to snadno změnit ve zdrojovém kódu (soubor .ino).
 -----------------------------------------------------------
-### Modely a textury
-* Modely budou ve formátu FBX, OBJ a MASH.
+### Jak to funguje?
+* Pokud je osoba (nebo předmět) kratší než 1,5 metru od vás, rozsvítí se červená LED dioda, 
+* z reproduktoru zazní výstražný signál. Chcete-li ji použít, stiskněte tlačítko,
 -----------------------------------------------------------
-### Dabing
-* Dabing bude součástí z Audacity. 
+### Jak se spouští?
+* Počkejte 1 až 2 sekundy na spuštění a pokud držíte stisknuté tlačítko, zařízení je aktivován. 
+* Zaměřte obě „oči“ na osobu (nebo předmět) a zkontrolujte, zda je vzdálenost menší než 1,5 metru.
 -----------------------------------------------------------
 ## Odkazy
 * Budou nové, ale až budu doma ;)
