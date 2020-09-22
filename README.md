@@ -3,6 +3,7 @@
 ## Cíle Projektu 
 * Hlavním účelem tohoto zařízení je informovat lidi o vzdálenosti, kterou od sebe kvůli pandemii Corona potřebují držet dál. 
 * Zařízení měří vzdálenost mezi vámi a jinou osobou (nebo obecně předměty). 
+* Bude obsahovat display, na kterém se bude moct regulovat vzdálenost laseru. 
 -----------------------------------------------------------
 ### Vdálenost
 * Ne každý přesně ví, co je 1,5 metru. S tímto jednoduchým zařízením je můžete ukázat.  
