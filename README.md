@@ -17,6 +17,9 @@
 * Chcete-li ji použít, stiskněte tlačítko, počkejte 1 až 2 sekundy na spuštění a pokud držíte stisknuté tlačítko, zařízení je aktivován. 
 * Zaměřte obě „oči“ na osobu (nebo předmět) a zkontrolujte, zda je vzdálenost menší než 1,5 metru.
 -----------------------------------------------------------
+### Schéma
+* Ještě není :) (Bude v KiCadu)
+-----------------------------------------------------------
 
 | Komponenty                   | x  |
 | -------------                | ----- |
@@ -29,14 +32,18 @@
 |Z. LED                        | 1x    |
 |Rezistor 220 ohm              | 2x    |
 |Rezistor 100 ohm              | 1x    |
-|Tlačitko                      | 1x    |
-|Deska (nepájivá) 50x70cm      | 1x    |
+|Tlačítko                      | 1x    |
+|Deska (nepájivá)              | 1x    |
 |Dráty                         | #x    |
 
------------------------------------------------------------
+----------------------------------------------------------- 
 ## Odkazy
 * https://www.youtube.com/watch?v=p40rwWJH_ps&ab_channel=LeonvandenBeukel
 * https://www.youtube.com/watch?v=eAh_y-CGglo&ab_channel=bmtechnicals
 * https://create.arduino.cc/projecthub/dl1ekm2/covid-19-ultrasonic-distance-warning-tool-8bda4c
+----------------------------------------------------------- 
+## Inspirace 
+Vím, že to asi nebude tak dobré, ale budu se snažit. :)
+* https://github.com/leonvandenbeukel/Distance-Warning-Device
 
 ##### Závěrečný projekt
