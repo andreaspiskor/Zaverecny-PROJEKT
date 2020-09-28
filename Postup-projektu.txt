@@ -1,0 +1,41 @@
+POSTUP PROJEKTU
+
+1-část Začít něco dělat
+-----------------------------
+1) Vybrat projekt | T
+2) Vybrat součástky | T
+3) Vyhledat inspiraci | T
+4) Napsat README.md | T
+-----------------------------
+
+2-část Sestavit hardware
+--------------------------------------------------------
+1) Funkčnost součástek | F
+2) Složit na nepájivém poli základ a přidávat doplňky, 
+   ktéré v průběhu projektu se mi budou líbit | F
+3) Udělat pěknou krabičku na zažízení DWD | F
+--------------------------------------------------------
+
+3-část Naprogramovat Arduino v Platformiu
+---------------------------------------------------------------
+1) Stáhnout VS kód | T
+2) Stáhnout doplňky Platformio a nejspíš C++ | T
+3) Naprogramovat základ (vzdálenost na bzučák T-F) | F
+4) Naprogramovat LED | F
+5) Naprogramovat Tlačitko | F
+6) Zkontrolovat jestli všechno dohromady beží a dělá co má | F
+----------------------------------------------------------------
+
+4-část Závěr
+---------------------------------
+1) Podívat se jestli projekt splňuje všechny body | F
+2) Několikrát otestovat | F
+3) Prezentovat projekt | F
+---------------------------------
+
+5-část Průběh celého projektu
+------------------------------
+1) Napsat postup | T 
+2) Udělat schéma v Kicadu | F
+3) Psát dokumentaci | F
+------------------------------
