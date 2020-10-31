@@ -20,8 +20,8 @@ POSTUP PROJEKTU
 ---------------------------------------------------------------
 1) Stáhnout VS kód | T
 2) Stáhnout doplňky Platformio a nejspíš C++ | T
-3) Naprogramovat základ (vzdálenost na bzučák T-F) | F
-4) Naprogramovat LED | F
+3) Naprogramovat základ (vzdálenost na bzučák T-F) | T
+4) Naprogramovat LED | T
 5) Naprogramovat Tlačitko | F
 6) Zkontrolovat jestli všechno dohromady beží a dělá co má | F
 ----------------------------------------------------------------
@@ -30,7 +30,7 @@ POSTUP PROJEKTU
 ---------------------------------
 1) Podívat se jestli projekt splňuje všechny body | F
 2) Několikrát otestovat | F
-3) Prezentovat projekt | F
+3) Prezentovat projekt | FFFFFFFFF
 ---------------------------------
 
 5-část Průběh celého projektu
