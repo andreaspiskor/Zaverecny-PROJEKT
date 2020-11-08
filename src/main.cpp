@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include <LiquidCrystal.h>
+
 const byte cLed = 4;
 const byte zLed = 5;
 const byte bzucak = 8;
@@ -8,6 +10,8 @@ const int tonyFrekvence = 2000; // Frekvence pípání
 int maxVzdalenost = 200; // Od kdy začne pípat 
 int vzdalenost; // Vzdálenost
 long ; //Jak dlouho bude bzučet
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup() {
   
@@ -17,11 +21,13 @@ void setup() {
   digitalWrite(cLed, HIGH);
   pinMode(zapis, OUTPUT); 
   pinMode(vypis, INPUT); 
-
+  lcd.begin(16, 2);
+  lcd.print("hello, world!");
 }
 
 void loop() {
-
+  lcd.setCursor(0, 1);
+  lcd.print(millis() / 1000);
   digitalWrite(zapis, LOW);
   delayMicroseconds(2);
   
