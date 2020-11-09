@@ -10,9 +10,12 @@ const int tonyFrekvence = 2000; // Frekvence pípání
 int maxVzdalenost = 200; // Od kdy začne pípat 
 int vzdalenost; // Vzdálenost
 long ; //Jak dlouho bude bzučet
-const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
-LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
-
+LiquidCrystal lcd(7,8,9,10,11,12);
+const int  buttonPin = 5;    
+const int  buttonPin1 = 6;
+int tlacitkoPocitac = 0;  
+int tlacitkoHodnota = 0;         
+int tlacitkoPosledniHodnota = 0;     
 void setup() {
   
   pinMode(cLed, OUTPUT);
@@ -21,13 +24,25 @@ void setup() {
   digitalWrite(cLed, HIGH);
   pinMode(zapis, OUTPUT); 
   pinMode(vypis, INPUT); 
-  lcd.begin(16, 2);
-  lcd.print("hello, world!");
+   pinMode(buttonPin, INPUT);
+   pinMode(buttonPin1, INPUT);
+   lcd.begin(16,2);
+   lcd.setCursor(0,1);
+   lcd.print("Hodnota měření:");
 }
 
 void loop() {
-  lcd.setCursor(0, 1);
-  lcd.print(millis() / 1000);
+   tlacitkoHodnota = digitalRead(buttonPin);
+   if (tlacitkoHodnota != tlacitkoPosledniHodnota) {
+     if (tlacitkoHodnota == HIGH)
+     {
+      tlacitkoPocitac++;
+      lcd.setCursor(7,1);
+      lcd.print(tlacitkoPocitac);
+     }
+   }
+  tlacitkoPosledniHodnota = tlacitkoHodnota;
+
   digitalWrite(zapis, LOW);
   delayMicroseconds(2);
   
