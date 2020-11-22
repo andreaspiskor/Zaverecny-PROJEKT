@@ -1,5 +1,6 @@
 #include <Arduino.h>
-#include <LiquidCrystal.h>
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h> 
 
 const byte cLed = 0;
 const byte zLed = 1;
@@ -10,7 +11,7 @@ const int tonyFrekvence = 2000; // Frekvence pípání
 int maxVzdalenost = 200; // Od kdy začne pípat 
 int vzdalenost; // Vzdálenost
 long ; //Jak dlouho bude bzučet
-LiquidCrystal lcd(7,8,9,10,11,12);
+LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
 const int  buttonPin = 5;    
 const int  buttonPin1 = 6;
 int tlacitkoPocitac = 0;  
@@ -26,9 +27,8 @@ void setup() {
   pinMode(vypis, INPUT); 
    pinMode(buttonPin, INPUT);
    pinMode(buttonPin1, INPUT);
-   lcd.begin(16,2);
-   lcd.setCursor(0,1);
-   lcd.print("Hodnota měření:");
+  lcd.init();
+  lcd.backlight();
 }
 
 void tlacitka() {
@@ -69,9 +69,17 @@ void mereni(){
   
 }
 
+void lcdDisplay(){
+  lcd.setCursor(2, 0);
+  lcd.print("Nazdar!");
+  lcd.setCursor(2, 1);
+  lcd.print("LCD Display");
+}
+
 void loop() {
   tlacitka();
   mereni();
+  lcdDisplay();
 }
 
 /*
@@ -93,21 +101,5 @@ void loop() {
     }
     digitalWrite(ledPin, ledState);
   }
-}
-*/
-
-/*
-#include <Wire.h> 
-#include <LiquidCrystal_I2C.h> 
-LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
-void setup() {
-  lcd.init();
-  lcd.backlight();
-}
-void loop() {
-  lcd.setCursor(2, 0);
-  lcd.print("Nazdar!");
-  lcd.setCursor(2, 1);
-  lcd.print("LCD Display");
 }
 */
