@@ -10,12 +10,12 @@ const byte vypis = 4;
 const int tonyFrekvence = 2000; // Frekvence pípání
 int maxVzdalenost = 200; // Od kdy začne pípat 
 int vzdalenost; // Vzdálenost
-long ; //Jak dlouho bude bzučet
+long; //Jak dlouho bude bzučet
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
 const int  buttonPin = 5;    
 const int  buttonPin1 = 6;
-int tlacitkoPocitac = 0;  
-int tlacitkoHodnota = 0;         
+int tlacitkoPocitac = 0;
+int tlacitkoHodnota = 0;
 int tlacitkoPosledniHodnota = 0;     
 void setup() {
   
@@ -70,10 +70,10 @@ void mereni(){
 }
 
 void lcdDisplay(){
-  lcd.setCursor(2, 0);
-  lcd.print("Nazdar!");
-  lcd.setCursor(2, 1);
-  lcd.print("LCD Display");
+  lcd.setCursor(0, 0);
+  lcd.print("Nastav vzdalenost: ");
+  lcd.setCursor(10, 1);
+  lcd.print(maxVzdalenost);
 }
 
 void loop() {
