@@ -10,45 +10,51 @@ const byte vypis = 4;
 const int tonyFrekvence = 2000; // Frekvence pípání
 int maxVzdalenost = 200; // Od kdy začne pípat 
 int vzdalenost; // Vzdálenost
-long; //Jak dlouho bude bzučet
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
-const int  buttonPin = 5;    
+const int  buttonPin = 5;
 const int  buttonPin1 = 6;
-int tlacitkoPocitac = 0;
-int tlacitkoHodnota = 0;
-int tlacitkoPosledniHodnota = 0;     
+int vzdalenostTlacitko = 0;
 void setup() {
-  
   pinMode(cLed, OUTPUT);
   pinMode(zLed, OUTPUT);
   pinMode(bzucak, OUTPUT);
   digitalWrite(cLed, HIGH);
   pinMode(zapis, OUTPUT); 
   pinMode(vypis, INPUT); 
-   pinMode(buttonPin, INPUT);
-   pinMode(buttonPin1, INPUT);
+  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin1, INPUT);
   lcd.init();
   lcd.backlight();
 }
 
 void tlacitka() {
-     tlacitkoHodnota = digitalRead(buttonPin);
-   if (tlacitkoHodnota != tlacitkoPosledniHodnota) {
-     if (tlacitkoHodnota == HIGH)
+  vzdalenost = digitalRead(buttonPin);
+   if (vzdalenost != vzdalenostTlacitko) {
+     if (vzdalenost == HIGH)
      {
-      tlacitkoPocitac++;
-      lcd.setCursor(7,1);
-      lcd.print(tlacitkoPocitac);
+      vzdalenost+= 10;
+      lcd.setCursor(10,1);
+      lcd.print(vzdalenost);
      }
    }
-  tlacitkoPosledniHodnota = tlacitkoHodnota;
+  vzdalenostTlacitko = vzdalenost;
+
+  vzdalenost = digitalRead(buttonPin1);
+   if (vzdalenost != vzdalenostTlacitko) {
+     if (vzdalenost == HIGH)
+     {
+      vzdalenost-= 10;
+      lcd.setCursor(10,1);
+      lcd.print(vzdalenost);
+     }
+   }
+  vzdalenostTlacitko = vzdalenost;
 
 }
 
 void mereni(){
   digitalWrite(zapis, LOW);
   delayMicroseconds(2);
-  
   digitalWrite(zapis, HIGH);
   delayMicroseconds(10);
   digitalWrite(zapis, LOW);
@@ -65,7 +71,6 @@ void mereni(){
     digitalWrite(cLed, LOW);
     digitalWrite(zLed, HIGH);  
   }
-
   
 }
 
@@ -73,7 +78,7 @@ void lcdDisplay(){
   lcd.setCursor(0, 0);
   lcd.print("Nastav vzdalenost: ");
   lcd.setCursor(10, 1);
-  lcd.print(maxVzdalenost);
+  lcd.print(vzdalenost);
 }
 
 void loop() {
@@ -81,25 +86,3 @@ void loop() {
   mereni();
   lcdDisplay();
 }
-
-/*
-const long interval = 1000;      
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
-
-void loop() {
-  unsigned long currentMillis = millis();
-
-  if (currentMillis - previousMillis >= interval) {
-    previousMillis = currentMillis;
-
-    if (ledState == LOW) {
-      ledState = HIGH;
-    } else {
-      ledState = LOW;
-    }
-    digitalWrite(ledPin, ledState);
-  }
-}
-*/
