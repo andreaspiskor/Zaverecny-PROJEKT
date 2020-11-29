@@ -26,13 +26,12 @@
 |Arduino Nano                  | 1x    |
 |Senzor vzdálenosti HC-SR04    | 1x    |
 |Bzučák (speaker)              | 1x    |
-|9V baterka                    | 1x    |  
 |I2C Display LCD 16X2          | 1x    | 
 |Č. LED                        | 1x    |
 |Z. LED                        | 1x    |
 |Rezistor 220 ohm              | 2x    |
 |Rezistor 100 ohm              | 2x    |
-|Tlačítko                      | 4x    |
+|Tlačítko                      | 3x    |
 |Deska (nepájivá)              | 1x    |
 |Dráty                         | #x    |
 
