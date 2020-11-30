@@ -2,15 +2,15 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-const byte cLed = 0;
-const byte zLed = 1;
+const byte cLed = 8;
+const byte zLed = 9;
 const byte bzucak = 2;
 const byte zapis = 3;
 const byte vypis = 4;
 const int tonyFrekvence = 2000; // Frekvence pípání
 int maxVzdalenost = 210;        // Maximální měřená vzdálenost
 int minVzdalenost = 140;        // Minimální měřená vzdálenost
-int vzdalenost = 160;           // Vzdálenost, která se může měnit podle libosti uživatele od 150-200 cm
+int vzdalenost;           // Vzdálenost, která se může měnit podle libosti uživatele od 150-200 cm
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2); //Display který je zapojený na 4 piny a to konstantou 0x27, šířka 16 znaků, výška 2 znaky
 const int buttonPin = 5;
 const int buttonPin1 = 6;
@@ -19,6 +19,7 @@ long dobaTrvani;
 
 void setup()
 {
+  Serial.begin(9600);
   pinMode(cLed, OUTPUT);
   pinMode(zLed, OUTPUT);
   pinMode(bzucak, OUTPUT);
@@ -30,7 +31,7 @@ void setup()
   lcd.init();
   lcd.backlight();
 }
-
+/*
 void tlacitka()
 {
   vzdalenost = digitalRead(buttonPin);
@@ -57,7 +58,7 @@ void tlacitka()
   }
   vzdalenostTlacitko = vzdalenost;
 }
-
+*/
 void mereni()
 {
   digitalWrite(zapis, LOW);
@@ -68,7 +69,8 @@ void mereni()
 
   dobaTrvani = pulseIn(vypis, HIGH);
   vzdalenost = dobaTrvani * 0.034 / 2;
-  if (vzdalenost > vzdalenost - 1 && vzdalenost > minVzdalenost && vzdalenost < maxVzdalenost)
+  // if (vzdalenost > vzdalenost - 1 && vzdalenost > minVzdalenost && vzdalenost < maxVzdalenost)
+  if (maxVzdalenost < vzdalenost)
   {
     tone(bzucak, tonyFrekvence);
     digitalWrite(cLed, HIGH);
@@ -87,14 +89,17 @@ void lcdDisplay()
   lcd.setCursor(0, 0);
   lcd.print("Nastav vzdalenost: ");
   lcd.setCursor(10, 1);
-  lcd.print(vzdalenost);
+  lcd.print(maxVzdalenost);
 }
 
 void loop()
 {
-  tlacitka();
+  //tlacitka();
+  Serial.println("Vzdalenost:");
+  Serial.println(vzdalenost);
   mereni();
   lcdDisplay();
+  delay(1000);
 }
 
 /*
