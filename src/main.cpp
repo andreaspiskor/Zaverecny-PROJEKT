@@ -8,10 +8,9 @@ const byte bzucak = 8;
 const byte zapis = 9;
 const byte vypis = 10;
 const int tonyFrekvence = 500; // Frekvence pípání
-int maxVzdalenost = 100;        // Maximální měřená vzdálenost
-int vzdalenost;           // Vzdálenost, která se může měnit podle libosti uživatele
+int maxVzdalenost = 100;        // Maximální vzdálenost od objektu (Může se jednoduše přenastavit :) )
+int vzdalenost;           // Hodnota, která se měří
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2); //Display který je zapojený na 4 piny a to konstantou 0x27, šířka 16 znaků, výška 2 znaky
-int vzdalenostTlacitko = 0;
 long dobaTrvani;
 
 void setup()
@@ -36,6 +35,7 @@ void mereni()
 
   dobaTrvani = pulseIn(vypis, HIGH);
   vzdalenost = dobaTrvani * 0.034 / 2;
+
   if (vzdalenost < maxVzdalenost)
   {
     tone(bzucak, tonyFrekvence);
