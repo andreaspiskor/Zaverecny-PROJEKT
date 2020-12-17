@@ -5,9 +5,9 @@
 * Hlavním účelem tohoto zařízení je informovat lidi o vzdálenosti, kterou od sebe kvůli pandemii Corona potřebují držet dál. 
 * Zařízení měří vzdálenost mezi vámi a jinou osobou (nebo obecně předměty).  
 -----------------------------------------------------------
-### Vdálenost
+### Vzdálenost
 * Ne každý přesně ví, co je 1,5 metru. S tímto jednoduchým zařízením je můžete ukázat.  
-* Můžete to snadno změnit ve zdrojovém kódu (soubor .ino).
+* Můžete to snadno změnit ve zdrojovém kódu (soubor main.cpp).
 -----------------------------------------------------------
 ### Jak to funguje?
 * Pokud je osoba (nebo předmět) kratší než 1,5 metru od vás, rozsvítí se červená LED dioda, 
@@ -30,17 +30,18 @@
 |Č. LED                        | 1x    |
 |Z. LED                        | 1x    |
 |Rezistor 220 ohm              | 2x    |
-|Rezistor 100 ohm              | 2x    |
-|Tlačítko                      | 3x    |
+|Rezistor 100 ohm              | 1x    |
+|Tlačítko                      | 1x    |
 |Deska (nepájivá)              | 1x    |
 |Dráty                         | #x    |
+|Baterka 9V                    | 1x    |
+|Konektor baterka 9V           | 1x    |
 
 ----------------------------------------------------------- 
 ## Odkazy
 * https://www.youtube.com/watch?v=p40rwWJH_ps&ab_channel=LeonvandenBeukel
 * https://www.youtube.com/watch?v=eAh_y-CGglo&ab_channel=bmtechnicals
 * https://create.arduino.cc/projecthub/dl1ekm2/covid-19-ultrasonic-distance-warning-tool-8bda4c
-* https://github.com/JChristensen/JC_Button
 ----------------------------------------------------------- 
 ## Inspirace 
 Vím, že to asi nebude tak dobré, ale budu se snažit. :)
