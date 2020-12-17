@@ -10,10 +10,10 @@ POSTUP PROJEKTU
 
 2-část Sestavit hardware
 --------------------------------------------------------
-1) Funkčnost součástek | F
+1) Funkčnost součástek | T
 2) Složit na nepájivém poli základ a přidávat doplňky, 
-   ktéré v průběhu projektu se mi budou líbit | F
-3) Udělat pěknou krabičku na zažízení DWD | F
+   ktéré v průběhu projektu se mi budou líbit | T
+3) Musel jsem přidat 9V baterku | T
 --------------------------------------------------------
 
 3-část Naprogramovat Arduino v Platformiu
@@ -22,15 +22,15 @@ POSTUP PROJEKTU
 2) Stáhnout doplňky Platformio a nejspíš C++ | T
 3) Naprogramovat základ (vzdálenost na bzučák T-F) | T
 4) Naprogramovat LED | T
-5) Naprogramovat Tlačitko | F
-6) Zkontrolovat jestli všechno dohromady beží a dělá co má | F
+5) Naprogramovat Display | T
+6) Zkontrolovat jestli všechno dohromady beží a dělá co má | T
 ----------------------------------------------------------------
 
 4-část Závěr
 ---------------------------------
-1) Podívat se jestli projekt splňuje všechny body | F
-2) Několikrát otestovat | F
-3) Prezentovat projekt | FFFFFFFFF
+1) Podívat se jestli projekt splňuje všechny body | T
+2) Několikrát otestovat | T
+3) Prezentovat projekt | F
 ---------------------------------
 
 5-část Průběh celého projektu
