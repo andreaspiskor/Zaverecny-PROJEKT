@@ -36,6 +36,6 @@ POSTUP PROJEKTU
 5-část Průběh celého projektu
 ------------------------------
 1) Napsat postup | T 
-2) Udělat schéma v Kicadu | F
-3) Psát dokumentaci | F
+2) Udělat schéma v Kicadu | T
+3) Psát dokumentaci | T
 ------------------------------
