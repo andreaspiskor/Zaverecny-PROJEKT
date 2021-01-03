@@ -30,7 +30,8 @@ POSTUP PROJEKTU
 ---------------------------------
 1) Podívat se jestli projekt splňuje všechny body | T
 2) Několikrát otestovat | T
-3) Prezentovat projekt | F
+3) Vytvořit prezentaci | F
+4) Prezentovat projekt | F
 ---------------------------------
 
 5-část Průběh celého projektu
