@@ -1,16 +1,17 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#define DEBUG
 
 const byte cLed = 4;
 const byte zLed = 5;
 const byte bzucak = 8;
 const byte zapis = 9;
 const byte vypis = 10;
-const int tonyFrekvence = 500; // Frekvence pípání
-int maxVzdalenost = 100;        // Maximální vzdálenost od objektu (Může se jednoduše přenastavit :) )
-int vzdalenost;           // Hodnota, která se měří
-LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2); //Display který je zapojený na 4 piny a to konstantou 0x27, šířka 16 znaků, výška 2 znaky
+const int tonyFrekvence = 500;                           // Frekvence pípání
+int maxVzdalenost = 100;                                 // Maximální vzdálenost od objektu (Může se jednoduše přenastavit :) )
+int vzdalenost;                                          // Hodnota, která se měří
+LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);  //Display který je zapojený na 4 piny a to konstantou 0x27, šířka 16 znaků, výška 2 znaky
 long dobaTrvani;
 
 void setup()
@@ -60,11 +61,10 @@ void lcdDisplay()
 
 void loop()
 {
+  #if defined(DEBUG)  
   Serial.println("Vzdalenost:");
   Serial.println(vzdalenost);
+  #endif 
   mereni();
   lcdDisplay();
-  delay(500);
 }
-
-//DISPLAY IS OUT (BE IN THE CLOUD NINE)
