@@ -30,12 +30,13 @@ POSTUP PROJEKTU
 ---------------------------------
 1) Podívat se jestli projekt splňuje všechny body | T
 2) Několikrát otestovat | T
-3) Prezentovat projekt | F
+3) Vytvořit prezentaci | F
+4) Prezentovat projekt | F
 ---------------------------------
 
 5-část Průběh celého projektu
 ------------------------------
 1) Napsat postup | T 
-2) Udělat schéma v Kicadu | F
-3) Psát dokumentaci | F
+2) Udělat schéma v Kicadu | T
+3) Psát dokumentaci | T
 ------------------------------
