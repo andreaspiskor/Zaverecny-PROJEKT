@@ -18,7 +18,7 @@
 * Zaměřte obě „oči“ na osobu (nebo předmět) a zkontrolujte, zda je vzdálenost menší než 1,5 metru.
 -----------------------------------------------------------
 ### Schéma
-![alt text](https://github.com/andreaspiskor/Zaverecny-PROJEKT/blob/master/Schéma-projekt.png)
+![alt text](https://github.com/andreaspiskor/Zaverecny-PROJEKT/blob/master/Schema-projekt.png)
 -----------------------------------------------------------
 
 | Komponenty                   | x  |
