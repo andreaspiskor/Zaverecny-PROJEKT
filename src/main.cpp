@@ -3,6 +3,7 @@
 #include <LiquidCrystal_I2C.h>
 #define DEBUG
 
+const byte buttonInterrupt = 2;
 const byte cLed = 4;
 const byte zLed = 5;
 const byte bzucak = 8;
@@ -14,9 +15,17 @@ int vzdalenost;                                          // Hodnota, která se m
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);  //Display který je zapojený na 4 piny a to konstantou 0x27, šířka 16 znaků, výška 2 znaky
 long dobaTrvani;
 
+void increment()
+{
+ maxVzdalenost = maxVzdalenost + 10;
+ if (maxVzdalenost>200){maxVzdalenost = 150;}
+}
+
 void setup()
 {
   Serial.begin(9600);
+  pinMode(buttonInterrupt, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(buttonInterrupt),increment, FALLING);
   pinMode(cLed, OUTPUT);
   pinMode(zLed, OUTPUT);
   pinMode(bzucak, OUTPUT);
@@ -64,7 +73,9 @@ void loop()
   #if defined(DEBUG)  
   Serial.println("Vzdalenost:");
   Serial.println(vzdalenost);
+  Serial.println(maxVzdalenost);
   #endif 
   mereni();
   lcdDisplay();
+  delay(500);
 }
