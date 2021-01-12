@@ -18,7 +18,7 @@
 * Zaměřte obě „oči“ na osobu (nebo předmět) a zkontrolujte, zda je vzdálenost menší než 1,5 metru.
 -----------------------------------------------------------
 ### Schéma
-![alt text](https://github.com/andreaspiskor/Zaverecny-PROJEKT/blob/master/Schéma.png)
+![alt text](https://github.com/andreaspiskor/Zaverecny-PROJEKT/blob/master/Schema-projekt.png)
 -----------------------------------------------------------
 
 | Komponenty                   | x  |
@@ -31,7 +31,7 @@
 |Z. LED                        | 1x    |
 |Rezistor 220 ohm              | 2x    |
 |Rezistor 100 ohm              | 1x    |
-|Tlačítko                      | 1x    |
+|Tlačítka                      | 2x    |
 |Deska (nepájivá)              | 1x    |
 |Dráty                         | #x    |
 |Baterka 9V                    | 1x    |
