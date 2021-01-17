@@ -75,11 +75,18 @@ void lcdDisplay()
 {
   lcd.setCursor(0, 0);
   lcd.print("Vzd: ");
-  lcd.setCursor(11, 0);
-  lcd.print(vzdalenost);
+  lcd.setCursor(10, 0);
+  if(vzdalenost<maxVzdalenost)
+  {
+  lcd.print("BAD");
+  }
+  else
+  {
+  lcd.print("OKE");  
+  }
   lcd.setCursor(0, 1);
   lcd.print("MaxVzd: ");
-  lcd.setCursor(11, 1);
+  lcd.setCursor(10, 1);
   lcd.print(maxVzdalenost);
 }
 
@@ -91,7 +98,6 @@ void loop()
   Serial.print("MAXVzdalenost: ");
   Serial.println(maxVzdalenost);
 #endif
-
   mereni();
   lcdDisplay();
   delay(500);
